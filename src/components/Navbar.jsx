@@ -1,9 +1,11 @@
 /** @format */
-
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
+  const pathName = usePathname();
   const links = [
     {
       title: "home",
@@ -27,7 +29,11 @@ const Navbar = () => {
       <h6 className="cursor-pointer">LOGO</h6>
       <ul className="flex gap-6">
         {links?.map((link) => (
-          <Link key={link.path} href={link.path}>
+          <Link
+            className={`${pathName === link.path && "text-amber-700"}`}
+            key={link.path}
+            href={link.path}
+          >
             {link.title}
           </Link>
         ))}

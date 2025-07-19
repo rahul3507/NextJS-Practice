@@ -17,10 +17,6 @@ const Navbar = () => {
       title: "Service",
       path: "/service",
     },
-    {
-      title: "Contact",
-      path: "/contact",
-    },
   ];
   return (
     <nav className="bg-amber-400 px-6 py-4 flex justify-between text-black">

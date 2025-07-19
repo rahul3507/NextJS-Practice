@@ -1,11 +1,12 @@
 /** @format */
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React from "react";
 
 const Navbar = () => {
   const pathName = usePathname();
+  const router = useRouter();
   const links = [
     {
       title: "home",
@@ -24,7 +25,9 @@ const Navbar = () => {
       path: "/contact",
     },
   ];
-  const handler = () => {};
+  const handler = () => {
+    router.push("/login");
+  };
   return (
     <nav className="bg-amber-400 px-6 py-4 flex justify-between text-black">
       <h6 className="cursor-pointer">LOGO</h6>

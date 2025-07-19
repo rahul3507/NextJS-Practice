@@ -24,6 +24,7 @@ const Navbar = () => {
       path: "/contact",
     },
   ];
+  const handler = () => {};
   return (
     <nav className="bg-amber-400 px-6 py-4 flex justify-between text-black">
       <h6 className="cursor-pointer">LOGO</h6>
@@ -38,7 +39,9 @@ const Navbar = () => {
           </Link>
         ))}
       </ul>
-      <button className="cursor-pointer">Log in</button>
+      <button onClick={handler} className="cursor-pointer">
+        Log in
+      </button>
     </nav>
   );
 };

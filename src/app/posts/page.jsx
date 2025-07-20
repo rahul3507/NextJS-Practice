@@ -1,6 +1,7 @@
 /** @format */
 
 import { getPosts } from "@/services/PostApi";
+import Link from "next/link";
 import React from "react";
 
 const PostPage = async () => {
@@ -15,6 +16,14 @@ const PostPage = async () => {
             <h6>{post.title}</h6>
             <br />
             <p>{post.body}</p>
+            <br />
+
+            <Link
+              href={`/posts/${post.id}`}
+              className="p-2 bg-amber-300 text-black rounded-2xl"
+            >
+              Details
+            </Link>
           </div>
         ))}
       </div>

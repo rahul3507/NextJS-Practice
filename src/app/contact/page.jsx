@@ -2,6 +2,11 @@
 
 import React from "react";
 
+export const metadata = {
+  title: "Contact | Next Hero",
+  description: "Super powerful next project",
+};
+
 const Contact = () => {
   return (
     <div>

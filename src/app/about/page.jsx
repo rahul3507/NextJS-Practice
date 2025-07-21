@@ -4,7 +4,9 @@ import AboutContents from "@/components/AboutContents";
 import React from "react";
 export const metadata = {
   title: "About",
+
   description: "Super powerful next project",
+  keywords: ["about", "about page"],
 };
 
 const AboutPage = () => {

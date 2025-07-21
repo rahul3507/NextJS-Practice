@@ -3,7 +3,9 @@
 import React from "react";
 
 export const metadata = {
-  title: "Categories",
+  title: {
+    absolute: "Categories",
+  },
   description: "Super powerful next project",
 };
 

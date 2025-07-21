@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "Posts | Next Hero",
+  title: "Posts",
   description: "Super powerful next project",
 };
 

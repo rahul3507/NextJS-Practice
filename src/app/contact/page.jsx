@@ -3,7 +3,7 @@
 import React from "react";
 
 export const metadata = {
-  title: "Contact | Next Hero",
+  title: "Contact",
   description: "Super powerful next project",
 };
 

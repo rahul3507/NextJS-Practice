@@ -14,8 +14,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+//Dynamic metadata
 export const metadata = {
-  title: "Next Hero",
+  title: {
+    default: "Next Hero",
+    template: "%s | Next Hero",
+  },
   description: "Super powerful next project",
 };
 

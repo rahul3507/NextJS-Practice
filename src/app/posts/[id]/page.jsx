@@ -3,11 +3,10 @@
 import React from "react";
 
 export const generateMetadata = async ({ params }) => {
+  const { id, description } = await params;
   return {
-    title: "Post Details",
-
-    description: "This is from post details",
-    keywords: ["about", "about page"],
+    title: `Post Details ${id}`,
+    description: `this is for ${id}`,
   };
 };
 
